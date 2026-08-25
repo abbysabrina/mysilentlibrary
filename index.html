@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silent Library, A Quiet Space For Every Reader</title>
+<meta name="description" content="Silent Library is a community library in Singapore. Browse books, check upcoming events, and find your next quiet afternoon.">
+<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sl-navbar sticky-top" aria-label="Primary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Silent Library<span class="sl-dot">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <form class="d-flex" role="search" action="books.html" method="get">
+            <input class="btn-search form-control" type="search" name="q" placeholder="Search books..." aria-label="Search books">
+            <button type="submit" class="visually-hidden">Search</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="sl-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="sl-section-label mb-2">Silent Library, Singapore</p>
+        <h1>Find your next quiet afternoon</h1>
+        <p class="fs-5 mt-3 sl-max-32">Browse the collection, see what is on this month, and settle in with a good book. A calm, welcoming library right in the heart of the city.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="books.html" class="btn btn-sl-primary">Browse Books</a>
+          <a href="events.html" class="btn btn-sl-outline">See Events</a>
+        </div>
+      </div>
+      <div class="col-lg-6 sl-hero-illustration">
+        <img src="images/hero.png" alt="Line illustration of an open book with quiet morning light" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="sl-guide-video">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-5">
+        <p class="sl-section-label mb-2">New Here?</p>
+        <h2>Watch a quick guide</h2>
+        <p>A short walkthrough showing how to browse for a book, check what events are on, and get in touch with us, so you can find your way around the site in no time.</p>
+      </div>
+      <div class="col-lg-7">
+        <video controls preload="metadata" poster="images/hero.png">
+          <source src="video/silent_library_guide.mp4" type="video/mp4">
+          Your browser does not support the video tag. You can view the guide directly in the video folder.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sl-section">
+  <div class="container">
+    <p class="sl-section-label mb-2">Featured Books</p>
+    <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+      <h2 class="mb-0">New this month</h2>
+      <a href="books.html" class="btn btn-sl-outline">View all books</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-lg-3">
+        <div class="sl-card">
+          <img src="images/book_covers/01_the_quiet_hour.png" alt="Cover of The Quiet Hour by Mara Lindgren">
+          <div class="sl-card-body">
+            <div class="sl-card-title">The Quiet Hour</div>
+            <div class="sl-card-meta">Mara Lindgren</div>
+            <span class="sl-pill available">Available now</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="sl-card">
+          <img src="images/book_covers/02_small_kindnesses.png" alt="Cover of Small Kindnesses by Daniel Ocho">
+          <div class="sl-card-body">
+            <div class="sl-card-title">Small Kindnesses</div>
+            <div class="sl-card-meta">Daniel Ocho</div>
+            <span class="sl-pill available">Available now</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="sl-card">
+          <img src="images/book_covers/05_midnight_recipes.png" alt="Cover of Midnight Recipes by Hana Okafor">
+          <div class="sl-card-body">
+            <div class="sl-card-title">Midnight Recipes</div>
+            <div class="sl-card-meta">Hana Okafor</div>
+            <span class="sl-pill available">Available now</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="sl-card">
+          <img src="images/book_covers/06_the_last_lighthouse_keeper.png" alt="Cover of The Last Lighthouse Keeper by Tom Fenwick">
+          <div class="sl-card-body">
+            <div class="sl-card-title">The Last Lighthouse Keeper</div>
+            <div class="sl-card-meta">Tom Fenwick</div>
+            <span class="sl-pill available">Available now</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sl-section sl-section-alt">
+  <div class="container">
+    <p class="sl-section-label mb-2">Library Events And Promotions</p>
+    <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+      <h2 class="mb-0">What is on this month</h2>
+      <a href="events.html" class="btn btn-sl-outline">View all events</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="sl-card">
+          <img src="images/event_story_time.png" alt="Illustration for Weekend Story Time For Little Readers">
+          <div class="sl-card-body">
+            <span class="sl-pill">Sat 6 Sept, 10am</span>
+            <div class="sl-card-title mt-2">Weekend Story Time For Little Readers</div>
+            <div class="sl-card-meta">Children's Corner, ages 3 to 6</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sl-card">
+          <img src="images/event_book_club.png" alt="Illustration for Silent Library Book Club">
+          <div class="sl-card-body">
+            <span class="sl-pill">Thu 18 Sept, 7pm</span>
+            <div class="sl-card-title mt-2">Silent Library Book Club</div>
+            <div class="sl-card-meta">Discussing Small Kindnesses</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sl-card">
+          <img src="images/event_author_talk.png" alt="Illustration for Author Talk With Priya Nathan">
+          <div class="sl-card-body">
+            <span class="sl-pill">Sat 20 Sept, 3pm</span>
+            <div class="sl-card-title mt-2">Author Talk With Priya Nathan</div>
+            <div class="sl-card-meta">Main Hall</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sl-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <img src="images/about.png" alt="Line illustration of a cosy reading corner with an armchair, lamp and plant" class="img-fluid rounded">
+      </div>
+      <div class="col-lg-6">
+        <p class="sl-section-label mb-2">About Silent Library</p>
+        <h2>A quiet space for every reader</h2>
+        <p class="mt-3">Silent Library is a community library dedicated to giving every reader a calm, welcoming place to read, borrow, and discover something new. Since opening on Prinsep Street, we have grown into a small but well loved corner of the neighbourhood, hosting story times, book clubs, and quiet study afternoons for readers of every age.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sl-section sl-section-alt">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-6">
+        <p class="sl-section-label mb-2">Newsletter</p>
+        <h2>Stay in the loop</h2>
+        <p class="mt-2">Get monthly updates on new arrivals and upcoming events, straight to your inbox.</p>
+        <form class="d-flex flex-column flex-sm-row gap-2 justify-content-center mt-4" action="#" method="post">
+          <input type="email" class="form-control sl-max-20" placeholder="Enter your email address" aria-label="Email address" required>
+          <button type="submit" class="btn btn-sl-accent">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="sl-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-lg-3">
+        <h6>Silent Library</h6>
+        <p>A quiet space for every reader. Come browse, borrow, and stay a while.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Quick Links</h6>
+        <a href="books.html">Books List</a>
+        <a href="events.html">Library Events And Promotions</a>
+        <a href="sitemap.html">Sitemap</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Support</h6>
+        <a href="contact.html">Contact Page</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Opening Hours</h6>
+        <p>Mon to Fri, 10am to 8pm<br>Sat and Sun, 10am to 6pm<br>Closed on public holidays</p>
+      </div>
+    </div>
+    <div class="sl-footer-bottom">Copyright 2026 Silent Library, 21 Prinsep Street, Singapore 188669. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

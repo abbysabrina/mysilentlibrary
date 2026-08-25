@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Page | Silent Library</title>
+<meta name="description" content="Get in touch with Silent Library, address, phone, email and opening hours.">
+<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sl-navbar sticky-top" aria-label="Primary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Silent Library<span class="sl-dot">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <form class="d-flex" role="search" action="books.html" method="get">
+            <input class="btn-search form-control" type="search" name="q" placeholder="Search books..." aria-label="Search books">
+            <button type="submit" class="visually-hidden">Search</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="sl-section pb-0">
+  <div class="container">
+    <p class="sl-section-label mb-2">Get In Touch</p>
+    <h1>Contact Page</h1>
+    <p class="fs-5 sl-max-40">Questions about a book, an event, or membership? Send us a message or drop by during opening hours.</p>
+  </div>
+</header>
+
+<section class="sl-section">
+  <div class="container">
+    <div class="row g-5">
+
+      <div class="col-lg-6">
+        <p class="sl-section-label mb-3">Contact Form</p>
+        <form action="#" method="post">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full name</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="What is this about?" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us how we can help" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-sl-primary">Send message</button>
+        </form>
+      </div>
+
+      <div class="col-lg-6">
+        <p class="sl-section-label mb-3">Contact Details</p>
+        <div class="sl-card sl-card-body mb-4">
+          <h2 class="h6 text-uppercase text-muted mb-2">Address</h2>
+          <p class="mb-3">21 Prinsep Street<br>Singapore 188669</p>
+          <hr class="sl-quiet-divider my-2">
+          <h2 class="h6 text-uppercase text-muted mb-2 mt-3">Phone and email</h2>
+          <p class="mb-1"><a href="tel:+6563384021">+65&nbsp;6338&nbsp;4021</a></p>
+          <p class="mb-3"><a href="mailto:hello@silentlibrary.sg">hello@silentlibrary.sg</a></p>
+          <hr class="sl-quiet-divider my-2">
+          <h2 class="h6 text-uppercase text-muted mb-2 mt-3">Opening hours</h2>
+          <p class="mb-0">Monday to Friday, 10am to 8pm<br>Saturday and Sunday, 10am to 6pm<br>Closed on public holidays</p>
+        </div>
+
+        <p class="sl-section-label mb-2">Map</p>
+        <div class="ratio ratio-4x3 rounded overflow-hidden border">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=103.8489%2C1.2985%2C103.8549%2C1.3025&layer=mapnik&marker=1.3005%2C103.8519"
+            title="Map showing the Silent Library location on Prinsep Street, Singapore"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="sl-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-lg-3">
+        <h6>Silent Library</h6>
+        <p>A quiet space for every reader. Come browse, borrow, and stay a while.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Quick Links</h6>
+        <a href="books.html">Books List</a>
+        <a href="events.html">Library Events And Promotions</a>
+        <a href="sitemap.html">Sitemap</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Support</h6>
+        <a href="contact.html">Contact Page</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Opening Hours</h6>
+        <p>Mon to Fri, 10am to 8pm<br>Sat and Sun, 10am to 6pm<br>Closed on public holidays</p>
+      </div>
+    </div>
+    <div class="sl-footer-bottom">Copyright 2026 Silent Library, 21 Prinsep Street, Singapore 188669. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>
