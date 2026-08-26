@@ -13,7 +13,13 @@
 
 <nav class="navbar navbar-expand-lg sl-navbar sticky-top" aria-label="Primary">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Silent Library<span class="sl-dot">.</span></a>
+    <a class="navbar-brand" href="index.html"><svg class="sl-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M50 34 C 38 27 24 25 14 27 L 14 68 C 24 66 38 68 50 75" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M50 34 C 62 27 76 25 86 27 L 86 68 C 76 66 62 68 50 75" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="50" y1="34" x2="50" y2="75" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="50" cy="17" r="6.5" fill="#96334b"/>
+          </svg>
+          Silent Library<span class="sl-dot">.</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,15 +65,15 @@
           <h6 class="fw-semibold mb-2 mt-2">Availability</h6>
           <div class="form-check"><input class="form-check-input" type="checkbox" id="availNow"><label class="form-check-label" for="availNow">Available now</label></div>
           <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="availLoan"><label class="form-check-label" for="availLoan">On loan</label></div>
-          <button class="btn btn-sl-outline w-100" type="button">Apply filters</button>
+          <button class="btn btn-sl-outline w-100" type="button" id="applyFilters">Apply filters</button>
         </div>
       </div>
 
       <div class="col-lg-9">
-        <p class="text-muted mb-3">Showing all 8 books</p>
-        <div class="row g-4">
+        <p class="text-muted mb-3" id="booksCount">Showing all 8 books</p>
+        <div class="row g-4" id="booksGrid">
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="fiction" data-availability="available">
             <div class="sl-card">
               <img src="images/book_covers/01_the_quiet_hour.png" alt="Cover of The Quiet Hour by Mara Lindgren">
               <div class="sl-card-body">
@@ -79,86 +85,86 @@
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="fiction" data-availability="available">
             <div class="sl-card">
               <img src="images/book_covers/02_small_kindnesses.png" alt="Cover of Small Kindnesses by Daniel Ocho">
               <div class="sl-card-body">
                 <div class="sl-card-title">Small Kindnesses</div>
                 <div class="sl-card-meta">Daniel Ocho, Contemporary Fiction</div>
                 <span class="sl-pill available mb-2">Available now</span>
-                <a href="book_details.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
+                <a href="book_details_02.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="fiction" data-availability="on-loan">
             <div class="sl-card">
               <img src="images/book_covers/03_the_cartographers_daughter.png" alt="Cover of The Cartographer's Daughter by Priya Nathan">
               <div class="sl-card-body">
                 <div class="sl-card-title">The Cartographer's Daughter</div>
                 <div class="sl-card-meta">Priya Nathan, Historical Fiction</div>
                 <span class="sl-pill on-loan mb-2">On loan</span>
-                <a href="book_details.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
+                <a href="book_details_03.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="non-fiction" data-availability="available">
             <div class="sl-card">
               <img src="images/book_covers/04_deep_roots.png" alt="Cover of Deep Roots by Wei Cheng Lau">
               <div class="sl-card-body">
                 <div class="sl-card-title">Deep Roots</div>
                 <div class="sl-card-meta">Wei Cheng Lau, Non Fiction</div>
                 <span class="sl-pill available mb-2">Available now</span>
-                <a href="book_details.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
+                <a href="book_details_04.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="non-fiction" data-availability="available">
             <div class="sl-card">
               <img src="images/book_covers/05_midnight_recipes.png" alt="Cover of Midnight Recipes by Hana Okafor">
               <div class="sl-card-body">
                 <div class="sl-card-title">Midnight Recipes</div>
                 <div class="sl-card-meta">Hana Okafor, Cookbook</div>
                 <span class="sl-pill available mb-2">Available now</span>
-                <a href="book_details.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
+                <a href="book_details_05.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="fiction" data-availability="available">
             <div class="sl-card">
               <img src="images/book_covers/06_the_last_lighthouse_keeper.png" alt="Cover of The Last Lighthouse Keeper by Tom Fenwick">
               <div class="sl-card-body">
                 <div class="sl-card-title">The Last Lighthouse Keeper</div>
                 <div class="sl-card-meta">Tom Fenwick, Adventure Fiction</div>
                 <span class="sl-pill available mb-2">Available now</span>
-                <a href="book_details.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
+                <a href="book_details_06.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="poetry" data-availability="available">
             <div class="sl-card">
               <img src="images/book_covers/07_where_the_rivers_meet.png" alt="Cover of Where The Rivers Meet by Aisha Rahman">
               <div class="sl-card-body">
                 <div class="sl-card-title">Where The Rivers Meet</div>
                 <div class="sl-card-meta">Aisha Rahman, Poetry</div>
                 <span class="sl-pill available mb-2">Available now</span>
-                <a href="book_details.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
+                <a href="book_details_07.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-xl-3">
+          <div class="col-6 col-md-4 col-xl-3" data-category="children" data-availability="on-loan">
             <div class="sl-card">
               <img src="images/book_covers/08_curious_minds.png" alt="Cover of Curious Minds by Dr Lena Ho">
               <div class="sl-card-body">
                 <div class="sl-card-title">Curious Minds</div>
                 <div class="sl-card-meta">Dr Lena Ho, Children</div>
                 <span class="sl-pill on-loan mb-2">On loan</span>
-                <a href="book_details.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
+                <a href="book_details_08.html" class="btn btn-sl-outline btn-sm w-100 mt-2">View details</a>
               </div>
             </div>
           </div>
@@ -174,7 +180,15 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-6 col-lg-3">
-        <h6>Silent Library</h6>
+        <div class="sl-footer-brand">
+          <svg class="sl-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M50 34 C 38 27 24 25 14 27 L 14 68 C 24 66 38 68 50 75" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M50 34 C 62 27 76 25 86 27 L 86 68 C 76 66 62 68 50 75" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="50" y1="34" x2="50" y2="75" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="50" cy="17" r="6.5" fill="#96334b"/>
+          </svg>
+          <span>Silent Library<span class="sl-dot">.</span></span>
+        </div>
         <p>A quiet space for every reader. Come browse, borrow, and stay a while.</p>
       </div>
       <div class="col-6 col-lg-3">
@@ -189,14 +203,16 @@
         <a href="privacy_policy.html">Privacy Policy</a>
       </div>
       <div class="col-6 col-lg-3">
-        <h6>Opening Hours</h6>
-        <p>Mon to Fri, 10am to 8pm<br>Sat and Sun, 10am to 6pm<br>Closed on public holidays</p>
+        <h6>Visit Us</h6>
+        <p class="mb-2">21 Prinsep Street<br>Singapore 188669<br><a href="tel:+6563384021">+65&nbsp;6338&nbsp;4021</a></p>
+        <p class="mb-0">Mon to Fri, 10am to 8pm<br>Sat and Sun, 10am to 6pm<br>Closed on public holidays</p>
       </div>
     </div>
-    <div class="sl-footer-bottom">Copyright 2026 Silent Library, 21 Prinsep Street, Singapore 188669. All rights reserved.</div>
+    <div class="sl-footer-bottom">Copyright 2026 Silent Library. All rights reserved.</div>
   </div>
 </footer>
 
 <script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script src="js/filters.js"></script>
 </body>
 </html>
