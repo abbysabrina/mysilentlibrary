@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deep Roots, Book Details | Silent Library</title>
-<meta name="description" content="Details and availability for Deep Roots by Wei Cheng Lau, at Silent Library.">
+<title>Event Registration | Silent Library</title>
+<meta name="description" content="Register for a Silent Library event, story time, workshop, book club or author talk.">
 <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
@@ -26,8 +26,8 @@
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="books.html">Books</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="events.html">Events</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
@@ -44,103 +44,70 @@
 <nav aria-label="breadcrumb" class="container pt-4">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="books.html">Books</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Deep Roots</li>
+    <li class="breadcrumb-item"><a href="events.html">Events</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Event Registration</li>
   </ol>
 </nav>
 
-<section class="sl-section pt-3">
+<header class="sl-section pb-0">
+  <div class="container">
+    <p class="sl-section-label mb-2">Save Your Spot</p>
+    <h1>Event Registration Form</h1>
+    <p class="fs-5 sl-max-40">Let us know which event you would like to join, and how many people are coming along.</p>
+  </div>
+</header>
+
+<section class="sl-section">
   <div class="container">
     <div class="row g-5">
-      <div class="col-lg-4">
-        <img src="images/book_covers/04_deep_roots.png" alt="Cover of Deep Roots by Wei Cheng Lau" class="img-fluid rounded shadow-sm">
-      </div>
-      <div class="col-lg-8">
-        <p class="sl-section-label mb-2">Non Fiction</p>
-        <h1>Deep Roots</h1>
-        <p class="fs-5 text-muted mb-3">Wei Cheng Lau</p>
-        <span class="sl-pill available">Available now</span>
 
-        <hr class="sl-quiet-divider">
-
-        <h2 class="h4">Description</h2>
-        <p>Deep Roots is a practical, encouraging guide to urban gardening and soil restoration, written by an agronomist who spent a decade turning vacant lots into thriving community farms.</p>
-        <p>Part memoir and part field guide, the book walks readers through composting, small space planting and building a garden that can outlast a single growing season, wherever they happen to live.</p>
-
-        <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="reserve.html?book=Deep+Roots" class="btn btn-sl-primary">Reserve this book</a>
-          <button type="button" class="btn btn-sl-outline">Add to my list</button>
-        </div>
-
-
-        <hr class="sl-quiet-divider">
-
-        <h2 class="h5">Listen to a preview</h2>
-        <p class="text-muted small">A short spoken excerpt from Chapter One, generated as an audio preview.</p>
-        <div class="sl-audio-preview">
-          <audio controls preload="none">
-            <source src="audio/deep_roots_preview.mp3" type="audio/mpeg">
-            Your browser does not support the audio element. You can find the preview file in the audio folder.
-          </audio>
-        </div>
-
-        <hr class="sl-quiet-divider">
-
-        <h2 class="h5">Book information</h2>
-        <div class="row">
-          <div class="col-sm-6">
-            <p class="mb-1"><span class="text-muted">Publisher:</span> Greenline Press</p>
-            <p class="mb-1"><span class="text-muted">Published:</span> 2024</p>
+      <div class="col-lg-7">
+        <p class="sl-section-label mb-3">Registration Details</p>
+        <form action="#" method="post" data-sl-form="eventConfirmation" novalidate>
+          <div class="mb-3">
+            <label for="eventName" class="form-label">Event</label>
+            <input type="text" class="form-control" id="eventName" name="event" placeholder="Which event are you registering for?" data-sl-prefill-param="event" required>
           </div>
-          <div class="col-sm-6">
-            <p class="mb-1"><span class="text-muted">Pages:</span> 240</p>
-            <p class="mb-1"><span class="text-muted">Language:</span> English</p>
+          <div class="mb-3">
+            <label for="eventDate" class="form-label">Event date and time</label>
+            <input type="text" class="form-control" id="eventDate" name="eventDate" placeholder="As shown on the Events page" data-sl-prefill-param="date" required>
           </div>
+          <div class="mb-3">
+            <label for="eventFullName" class="form-label">Full name</label>
+            <input type="text" class="form-control" id="eventFullName" name="fullName" placeholder="Your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="eventEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="eventEmail" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="eventAttendees" class="form-label">Number of attendees</label>
+            <input type="number" class="form-control" id="eventAttendees" name="attendees" min="1" max="10" value="1" required>
+          </div>
+          <div class="mb-3">
+            <label for="eventNotes" class="form-label">Notes (optional)</label>
+            <textarea class="form-control" id="eventNotes" name="notes" rows="4" placeholder="Dietary needs, accessibility needs, or anything else we should know"></textarea>
+          </div>
+          <button type="submit" class="btn btn-sl-primary">Submit registration</button>
+        </form>
+
+        <div id="eventConfirmation" class="sl-card sl-card-body d-none" tabindex="-1">
+          <h2 class="h5 mb-2">Registration received</h2>
+          <p class="mb-0">Thank you for registering. We will send a confirmation to your email closer to the event date, see you there.</p>
         </div>
       </div>
-    </div>
 
-    <hr class="sl-quiet-divider">
+      <div class="col-lg-5">
+        <p class="sl-section-label mb-3">Good To Know</p>
+        <div class="sl-card sl-card-body mb-4">
+          <h2 class="h6 text-uppercase text-muted mb-2">Before you register</h2>
+          <p class="mb-3">Spaces are limited for most events, so registering early is recommended. Full event details, dates and times are listed on the <a href="events.html">Events page</a>.</p>
+          <hr class="sl-quiet-divider my-2">
+          <h2 class="h6 text-uppercase text-muted mb-2 mt-3">Need to cancel or change your booking?</h2>
+          <p class="mb-0">Reach us anytime through the <a href="contact.html">Contact page</a> and we will sort it out.</p>
+        </div>
+      </div>
 
-    <p class="sl-section-label mb-2">Related Books</p>
-    <h2 class="h4 mb-4">You may also like</h2>
-    <div class="row g-4">
-      <div class="col-6 col-md-3">
-        <div class="sl-card">
-          <img src="images/book_covers/05_midnight_recipes.png" alt="Cover of Midnight Recipes by Hana Okafor">
-          <div class="sl-card-body">
-            <div class="sl-card-title">Midnight Recipes</div>
-            <div class="sl-card-meta">Hana Okafor</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="sl-card">
-          <img src="images/book_covers/08_curious_minds.png" alt="Cover of Curious Minds by Dr Lena Ho">
-          <div class="sl-card-body">
-            <div class="sl-card-title">Curious Minds</div>
-            <div class="sl-card-meta">Dr Lena Ho</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="sl-card">
-          <img src="images/book_covers/03_the_cartographers_daughter.png" alt="Cover of The Cartographer's Daughter by Priya Nathan">
-          <div class="sl-card-body">
-            <div class="sl-card-title">The Cartographer's Daughter</div>
-            <div class="sl-card-meta">Priya Nathan</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="sl-card">
-          <img src="images/book_covers/01_the_quiet_hour.png" alt="Cover of The Quiet Hour by Mara Lindgren">
-          <div class="sl-card-body">
-            <div class="sl-card-title">The Quiet Hour</div>
-            <div class="sl-card-meta">Mara Lindgren</div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -182,5 +149,6 @@
 </footer>
 
 <script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script src="js/forms.js"></script>
 </body>
 </html>

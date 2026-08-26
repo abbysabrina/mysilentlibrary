@@ -68,8 +68,21 @@
         <p>Every chapter ends with a simple experiment children can try at home with things already in the kitchen, making it a favourite for family reading time as much as school projects.</p>
 
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="contact.html" class="btn btn-sl-primary">Reserve this book</a>
+          <button type="button" class="btn btn-sl-primary" disabled>Currently on loan</button>
           <button type="button" class="btn btn-sl-outline">Add to my list</button>
+        </div>
+
+        <p class="text-muted small mt-2">This title is currently on loan and not open for reservation yet. Please check back on the <a href="books.html">Books page</a> for its next availability.</p>
+
+        <hr class="sl-quiet-divider">
+
+        <h2 class="h5">Listen to a preview</h2>
+        <p class="text-muted small">A short spoken excerpt from Chapter One, generated as an audio preview.</p>
+        <div class="sl-audio-preview">
+          <audio controls preload="none">
+            <source src="audio/curious_minds_preview.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. You can find the preview file in the audio folder.
+          </audio>
         </div>
 
         <hr class="sl-quiet-divider">
